@@ -1,0 +1,43 @@
+bold {
+    font-weight: bold;
+}    
+italic {
+    font-style: italic;
+}
+h1 {
+    font-size: 200%;
+}
+h2 {
+    font-size: 130%;
+}
+
+.margin {
+    margin-top: 50px;
+}
+.keytext {
+    font-size: 85%;
+}
+
+.peter {
+    background-color: rgb(210, 210, 255);
+}
+
+.dana {
+    background-color: rgb(255, 199, 199);
+}
+
+.mayor {
+    background-color:rgb(152, 255, 255);
+}
+
+.ray {
+    background-color: rgb(192, 255, 192);
+}
+
+.egon {
+    background-color:rgb(255, 196, 255);
+}
+
+.winston {
+    background-color: rgb(255, 255, 187);
+}

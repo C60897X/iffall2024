@@ -1,0 +1,48 @@
+.fr {
+    font-size: 110%;
+    font-weight: bold;
+    color: rgb(0, 0, 155);
+    text-align: center;
+}
+
+.en {
+    font-size: 95%;
+    color: rgb(0, 108, 179);
+    margin-top: -1%;
+    text-align: center;
+}
+
+.break {
+    font-style: italic;
+    font-size:85%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgb(63, 82, 255);
+}
+
+.link {
+    font-size: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 78);
+}
+
+h1 {
+    font-size: 200%;
+    color: rgba(0, 0, 45, 0.814);
+    text-align: center;
+}
+
+h2 {
+    font-size: 150%;
+    color: rgba(0, 0, 95, 0.868);
+    text-align: center;
+}
+
+h3 {
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}

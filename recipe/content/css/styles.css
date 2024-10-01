@@ -1,0 +1,79 @@
+html {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    background-color: rgb(253, 225, 253);
+}
+
+body {
+    color: rgb(38, 7, 53);
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+h3 {
+    margin-top: 35px;
+    margin-bottom: 8px;
+    clear: both;
+}
+p {
+    margin-left: 1.5rem;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-left: 1.5rem;
+}
+
+bold {
+    font-weight: bold;
+}
+
+underline {
+    text-decoration: underline;
+}
+
+.ingredients {
+    float: left;
+    margin: 8px 2rem 35px 0;
+}
+
+.cover {
+    margin-left: 15%;
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+img {
+    display: block;
+    margin: 0.6rem;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.end {
+    margin-left: 25%;
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.moreimages {
+    margin: 0.6rem;
+    height: 450px;
+    object-fit: cover;
+    display: inline;
+}
+
+.imageblock {
+    text-align: center;
+}

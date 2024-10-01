@@ -1,0 +1,32 @@
+html {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px 150px 50px 150px;
+    background-color: rgb(241, 241, 241);
+}
+
+header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+.prototype {
+    display: block;
+    margin: 0 30px;
+}
+
+.desktop {
+    width: 400px;
+}
+
+.mobile {
+    width: 200px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+}

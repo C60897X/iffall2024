@@ -1,0 +1,135 @@
+body {
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding-top: 166px;
+    padding-bottom: 158px;
+    background-image: url('../images/header_backgorund.jpg');
+    background-size: 1440px;
+    background-position: 0% 20%;
+}
+
+h1 {
+    font-size: 60pt;
+    line-height: 1;
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    font-size: 23pt;
+    margin-top: 10px;
+    letter-spacing: -0.02rem;
+    color: white;
+}
+
+section h1 {
+    font-size: 30pt;
+    text-align: center;
+    color: black;
+}
+
+.firstsection {
+    padding-top: 48px;
+    font-size: 18px;
+    line-height: 1.6rem;
+    margin: auto;
+    background-color: rgb(203, 255, 203);
+}
+.firstsection div { 
+    width: 960px;
+    margin: auto;
+    padding-top: 38px;
+    line-height: 25px;
+    letter-spacing: -0.0025rem;
+    padding-bottom: 35px;
+}
+
+.mountain {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    position: center;
+    float: right;
+    margin: 0 0 26px 50px;
+}
+
+.sectiontext {
+    padding-bottom: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.secondsection {
+    padding-top: 47px;
+    background-color: rgb(239, 251, 239);
+    padding-bottom: 40px;
+}
+
+.flex {
+    width: 960px;
+    margin: auto;
+    padding: 0;
+    padding-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex li {
+    display: block;
+    width: 50%;
+    padding-bottom: 24px;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.flex li div:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex li div:last-child {
+    margin-top: 7px;
+    font-size: 18px;
+    line-height: 1.6rem;
+}
+
+.gridimages {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    margin-right: 12px;
+}
+
+.thirdsection {
+    padding-top: 47px;
+    background-color: rgb(57, 131, 57);
+    padding-bottom: 102px;
+}
+
+.thirdsection div {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 39px;
+    line-height: 2.25rem;
+    letter-spacing: 0.02rem;
+}
+
+footer {
+    padding-top: 24px;
+    padding-bottom: 45px;
+    background-color: rgb(0, 48, 0);
+}
+
+footer p {
+    padding-top: 17px;
+    width: 960px;
+    margin: auto;
+    font-size: 17px;
+    color: white;
+    letter-spacing: 0.03rem;
+}

@@ -1,0 +1,424 @@
+.page-format {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    flex-wrap: wrap;
+}
+
+.box-border {
+    width: 22%;
+    height: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(188, 188, 188);
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Exploding Kittens */
+.kitten-button {
+    display: inline-block;
+    margin-top: 40%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(27, 59, 27);
+    font-size: 16px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: color 0.1s, background-color 0.1s, padding 0.05s;
+    font-family: 'PT-Sans', sans-serif;
+}
+
+.kitten-button:hover {
+    background-color: black;
+    padding: 15px 27px;
+    margin-top: 39%;
+    font-size: 0.9rem;
+    color: rgb(197, 29, 10);
+}
+
+.kitten-button:hover .kitten-word {
+    text-transform: uppercase;
+}
+
+.kitten-button:hover .fa-bomb {
+    font-size: 1.5rem;
+    color: rgb(197, 29, 10);
+}
+
+.kitten-button:active {
+    font-size: 1.0rem;
+}
+
+@keyframes explode {
+    from {transform: rotate(-8deg);}
+    20% {transform: rotate(5deg);}
+    30% {transform: rotate(-5deg);}
+    40% {transform: rotate(7deg);}
+    50% {transform: rotate(-5deg);}
+    55% {transform: rotate(10deg);}
+    68% {transform: rotate(-13deg);}
+    78% {transform: rotate(15deg);}
+    85% {transform: rotate(-13deg);}
+    90% {transform: rotate(18deg);}
+    95% {transform: rotate(-15deg);}
+    to {transform: rotate(20deg);}
+  }
+
+.kitten-button:active .fa-bomb::before {
+    display: block;
+    animation-name: explode;
+    animation-duration: 0.6s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+/* Instagram */
+.instagram-button {
+    display: inline-block;
+    margin-top: 35%;
+    text-decoration: none;
+    color: rgb(197, 48, 144);
+    border-style: solid;
+    border-width: 4px;
+    padding: 10px 10px 15px 10px;
+    border-radius: 30px;
+    border-color: rgb(73, 99, 212) rgb(117, 55, 182) rgb(197, 48, 144) rgb(234, 73, 75);
+}
+
+.instagram-button:hover {
+    border-radius: 32px;
+    color: white;
+    background-color: rgba(197, 48, 144, 50%);
+}
+
+.fa-instagram {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 3.0rem;
+}
+
+.instagram-button:hover .fa-instagram {
+    font-size: 3.2rem;
+}
+
+@keyframes instagram {
+    from {transform: rotate(45deg);}
+    25% {transform: rotate(135deg);}
+    50% {transform: rotate(225deg);}
+    75% {transform: rotate(315deg);}
+    to {transform: rotate(405deg);}
+  }
+
+.instagram-button:active .fa-instagram {
+    display: block;
+    transform-origin: center;
+    animation-name: instagram;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+/* Coca Cola */
+.cola-button {
+    display: inline-block;
+    margin-top: 40%;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-family: "work-sans", sans-serif;
+    font-weight: 900;
+    color: #f40002;
+    transition: 0.3s;
+}
+
+.cola-button:hover {
+    font-size: 1.2rem;
+    padding: 13px 18px;
+    border-style: double;
+    border-width: 8px;
+    color: white;
+    background-color: #f40002;
+}
+
+.cola-button:active {
+    background-image: radial-gradient(#f40002 60%, #f69595);
+    animation-name: cola;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cola {
+    from {padding: 13px 18px; font-size: 1.2rem;}
+    10% {padding: 15px 20px; font-size: 1.4rem;}
+    20% {padding: 13px 18px; font-size: 1.2rem;}
+    30% {padding: 15px 20px; font-size: 1.4rem;}
+    40% {padding: 13px 18px; font-size: 1.2rem;}
+    50% {padding: 15px 20px; font-size: 1.4rem;}
+    60% {padding: 13px 18px; font-size: 1.2rem;}
+    70% {padding: 15px 20px; font-size: 1.4rem;}
+    80% {padding: 13px 18px; font-size: 1.2rem;}
+    90% {padding: 15px 20px; font-size: 1.4rem;}
+    to {padding: 13px 18px; font-size: 1.2rem;}
+  }
+
+/* Nike */
+.nike-button {
+    display: inline-block;
+    margin-top: 42%;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: black;
+    transition: text 0.5s, border 0.5s, background-color 0.3s;
+}
+
+.nike-button:hover {
+    font-size: 2rem;
+    color: black;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 30px;
+    border-color: black;
+    padding: 5px 25px;
+    margin-top: 37%;
+}
+
+.nike-button:active {
+    color: white;
+    background-color: black;
+}
+
+/* mollyjogger */
+.mollyjogger-button {
+    display: inline-block;
+    margin-top: 22%;
+    text-decoration: none;
+    padding: 80px 50px;
+    border-style: solid;
+    border-color: #3e441b;
+    border-radius: 100%;
+    font-family: "homemade-apple", cursive;
+    letter-spacing: 0.08em;
+    color: white;
+    background-color: #3e441b;
+    transition: border 0.5s;
+}
+
+.mollyjogger-button:hover {
+    font-size: 1.5rem;
+    padding: 74px 28px;
+    color: #a8a778;
+    text-shadow: 2px 2px 3px #8d8c58;
+}
+
+.mollyjogger-button:active {
+    border-style: double;
+    border-color: #a8a778;
+    border-width: 5px;
+    animation-name: mollyjogger;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes mollyjogger {
+    from {transform: rotate(0deg);}
+    50% {transform: rotate(-180deg);}
+    to {transform: rotate(-360deg);}
+}
+
+/* Cartoon Network */
+.cartoonnetwork-button {
+    display: inline-block;
+    margin-top: 43%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    font-size: 1.4rem;
+    color: rgb(32, 5, 32);
+    transition: background-color 0s;
+}
+
+.cartoonnetwork-button:hover {
+    border-style: solid;
+    padding: 5px;
+    color: white;
+    background-color: rgb(32, 5, 32);
+    margin-top: 41%;
+    transition: background-color 0s;
+}
+
+.cartoonnetwork-button:active {
+    background-color: rgb(136, 60, 136);
+    transition: background-color 0.7s;
+}
+
+/* the New Yorker */
+.newyorker-button {
+    display: inline-block;
+    margin-top: 43%;
+    text-decoration: none;
+    line-height: 1.1rem;
+    font-family: "adobe-caslon-pro", serif;
+    font-weight: 700;
+    color: white;
+    padding: 10px 15px;
+    background-color: black;
+    border-style: double;
+    border-width: 3px;
+    border-color: white;
+    transition: color 1.5s, border 0.3s, padding 0.3s, text 0.3s;
+}
+
+.newyorker-button:hover {
+    color: black;
+    background-color: white;
+    padding: 13px 18px;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    border-style: solid;
+    border-color: black;
+    margin-top: 41%;
+}
+
+.newyorker-button:active {
+    animation-name: newyorker;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes newyorker {
+    from {border-color: black;}
+    47% {border-color: white;}
+    52% {border-color: white;}
+    to {border-color: black;}
+}
+
+/* The Color Run */
+.colorrun-button {
+    display: inline-block;
+    margin-top: 38%;
+    text-decoration: none;
+    line-height: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: black;
+    padding: 15px 15px;
+    background-color: black;
+    color: #ec008a;
+    transition: color 0.5s, background-color 0.5s, border 0.5s, text 0.5s;
+}
+
+.colorrun-button:hover {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    padding: 18px 26px;
+    margin-top: 36%;
+    color: white;
+    background-color: #ecdb00;
+    border-color: #ecdb00;
+}
+
+.colorrun-button:active {
+    color: black;
+    background-color: #05aced;
+    border-color: #05aced;
+}
+
+/* MOO */
+.moo-button {
+    display: inline-block;
+    margin-top: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 0px 5px 40px 5px;
+    transition: none;
+}
+
+.fa-droplet {
+    position: relative;
+    top: 62px;
+    font-size: 7rem;
+    color: #4da977;
+    z-index: -10;
+}
+
+.moo-button:hover {
+    border-style: solid;
+    border-radius: 100%;
+    border-color: #4da977;
+    border-width: 3px;
+    background-color: #4da977;
+    margin-top: 35%;
+    padding: 12px 15px 30px 15px;
+    transition: text 0.3s, padding 0.3s, color 0.3s;
+}
+
+.moo-button:hover .fa-droplet{
+    display: none;
+}
+
+.moo-button:active {
+    font-size: 1.5rem;
+    padding: 15px 18px 33px 18px;
+    margin-top: 31%;
+    color: #4da977;
+    background-color: white;
+}
+
+/* Harry Potter */
+.hp-button {
+    display: inline-block;
+    margin-top: 40%;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 10px 15px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    transition: padding 0.3s, text 0.2s;
+}
+
+.hp-button:hover {
+    padding: 15px 20px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 38%;
+    border-color: white;
+    color: rgb(212,167,94);
+    background-color: #00001b;
+}
+
+.hp-button:active {
+    text-shadow: 2px 2px 3px #131350;
+    animation-name: hp;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hp {
+    from {color: rgba(212,167,94,100%);}
+    40% {color: rgba(212,167,94,60%);}
+    45% {color: rgba(212,167,94,40%);}
+    50% {color: rgba(212,167,94,20%);}
+    to {opacity: 100%;}
+}

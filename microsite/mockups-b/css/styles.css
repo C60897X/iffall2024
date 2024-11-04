@@ -1,0 +1,33 @@
+html {
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(218, 218, 218);
+}
+
+header {
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+.space-between {
+    margin-top: 10%;
+}
+
+.mobile {
+    width: 430px;
+}

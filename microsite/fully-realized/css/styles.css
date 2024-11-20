@@ -477,6 +477,12 @@ section {
     }
 }
 
+@media (max-width: 1024px) {
+    .button-ribbon {
+        left: 127px;
+    }
+}
+
 @media (max-width: 941px) {
     .homepage-buttons {
         display: flex;

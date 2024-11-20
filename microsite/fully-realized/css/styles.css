@@ -447,6 +447,12 @@ section {
     z-index: -5;
 }
 
+@media (max-width: 1366px) {
+    .button-ribbon {
+        left: 170px;
+    }
+}
+
 @media (max-width: 1295px) {
     .button {
         width: 450px;

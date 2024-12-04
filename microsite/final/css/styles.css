@@ -396,7 +396,7 @@ section {
     transform: translateX(-50%);
     z-index: 5;
     animation-name: slider-dots;
-    animation-duration: 6s;
+    animation-duration: 9s;
     animation-iteration-count: infinite;
 }
 
@@ -413,7 +413,7 @@ section {
     margin: 0%;
     left: 0;
     animation-name: image-slider;
-    animation-duration: 6s;
+    animation-duration: 9s;
     animation-iteration-count: infinite;
 }
 
@@ -429,21 +429,21 @@ section {
 
 @keyframes image-slider {
     from {left:0;}
-    29% {left:0;}
+    27% {left:0;}
     33.33% {left: -100%;}
-    62.33% {left: -100%;}
+    60.33% {left: -100%;}
     66.66% {left: -200%;}
-    95.66% {left: -200%;}
+    93.66% {left: -200%;}
     to {left: -300%;}
 }
 
 @keyframes slider-dots {
     from {left: 47.5%;}
-    30% {left: 47.5%;}
-    30.1% {left: 50%;}
-    63% {left: 50%;}
-    63.1% {left: 52.5%;}
-    96% {left: 52.5%;}
+    28% {left: 47.5%;}
+    28.1% {left: 50%;}
+    61% {left: 50%;}
+    61.1% {left: 52.5%;}
+    94% {left: 52.5%;}
     to {left: 47.5%;}
 }
 
@@ -458,11 +458,11 @@ section {
 
     @keyframes slider-dots {
         from {left: 45.5%;}
-        30% {left: 45.5%;}
-        30.1% {left: 50%;}
-        63% {left: 50%;}
-        63.1% {left: 54.5%;}
-        96% {left: 54.5%;}
+        28% {left: 45.5%;}
+        28.1% {left: 50%;}
+        61% {left: 50%;}
+        61.1% {left: 54.5%;}
+        94% {left: 54.5%;}
         to {left: 45.5%;}
     }
 }
@@ -498,11 +498,11 @@ section {
     
     @keyframes slider-dots {
         from {left: 42.5%;}
-        30% {left: 42.5%;}
-        30.1% {left: 50%;}
-        63% {left: 50%;}
-        63.1% {left: 57.5%;}
-        96% {left: 57.5%;}
+        28% {left: 42.5%;}
+        28.1% {left: 50%;}
+        61% {left: 50%;}
+        61.1% {left: 57.5%;}
+        94% {left: 57.5%;}
         to {left: 42.5%;}
     }
 }

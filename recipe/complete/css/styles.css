@@ -24,11 +24,67 @@ html {
     }
  }
 
- /* header related */
+ /* header */
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 100%;
+    background-color: rgb(66, 26, 66);
+}
+
+header a {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    top: 15%;
+    left: 3%;
+    transform: translate(-50%, 0%);
+    transition: all 0.5s;
+}
+
+header a:hover {
+    font-size: 1.7rem;
+    top: 12%;
+    left: 2%;
+}
+
+header a:active {
+    font-size: 1.7rem;
+    top: 12%;
+    left: 2%;
+    color: rgba(245, 219, 245, 0.322);
+}
+
+ @media (max-width: 500px) {
+    header a {
+        font-size: 1rem;
+        top: 25%;
+        left: 5%;
+    }
+
+    header a:hover {
+        font-size: 1.1rem;
+        top: 25%;
+        left: 5%;
+    }
+
+    header a:active {
+        font-size: 1.1rem;
+        top: 25%;
+        left: 5%;
+    }
+ }
+
+ /* title section related */
+.main {
     height: fit-content;
     display: flex;
     flex-direction: row;
+    margin-top: 65px;
 }
 
 .coverimg {
@@ -36,10 +92,9 @@ header {
     height: 500px;
     float: left;
     object-fit: cover;
-    padding-right: 5%;
 }
 
-header h1 {
+.main h1 {
     text-align: left;
     font-size: 60px;   
     padding-top: 20%;
@@ -49,7 +104,7 @@ header h1 {
     color: rgb(66, 26, 66);
 }
 
-header p {
+.main p {
     text-align: left;
     margin: auto;
     margin-top: 0;
@@ -68,19 +123,19 @@ header p {
 }
 
 @media (max-width: 1366px) {
-    header h1 {
+    .main h1 {
         font-size: 45px;
         margin-bottom: 50px;
     }
 
-    header p {
+    .main p {
         line-height: 1.5;
         font-size: 0.9rem;
     }
 }
 
 @media (max-width: 830px) {
-    header {
+    .main {
         display: block;
     }
 
@@ -98,13 +153,13 @@ header p {
         width: 100%;
     }
 
-    header h1 {
+    .main h1 {
         font-size: 30px;
         text-align: center;
         margin-bottom: 2%;
     }
 
-    header p {
+    .main p {
         text-align: center;
     }
 }
@@ -116,7 +171,7 @@ header p {
     flex-direction: row;
     height: fit-content;
     border-top: 3px dotted rgb(113, 83, 113);
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 @media (max-width: 830px) {
@@ -132,16 +187,16 @@ header p {
     flex-direction: column;
     height: fit-content;
     border-top: 3px dotted rgb(113, 83, 113);
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 .secondh2 {
     text-align: center;
     text-decoration-line: underline;
-    margin-top: 5%;
     width: 30%;
-    margin-left: 65%;
     color: rgb(66, 26, 66);
+    margin: auto;
+    margin-bottom: 1rem;
 }
 
 .ingredients {
@@ -160,6 +215,21 @@ header p {
 .ingredientslist li p {
     margin-top: 0;
     margin-bottom: 2%;
+}
+
+.phoneshow {
+    display: none;
+}
+
+@media (max-width: 830px) {
+.phoneshow {
+    display: contents;
+    margin: 0;
+}
+
+.phonehide {
+    display: none;
+}
 }
 
 .asterisk {
@@ -186,7 +256,7 @@ header p {
 
 .righttwo {
     width: 30%;
-    margin-top: 5%;
+    margin-top: 3rem;
     margin-bottom: 0%;
 }
 
@@ -212,7 +282,7 @@ header p {
     .ipadasterisktext {
         display: contents;
         font-size: 0.7rem;
-        color: rgb(65, 57, 68);
+        color: rgb(100, 37, 100);
         line-height: 0.2rem;
     }
 }
@@ -259,7 +329,6 @@ header p {
     .phoneasterisktext {
         display: contents;
         font-size: 0.8rem;
-        color: rgb(65, 57, 68);
         line-height: 0.05rem;
         width: 70%;
         margin: auto;
@@ -275,7 +344,7 @@ header p {
     border-top: 3px dotted rgb(113, 83, 113);
     font-size: 1.1rem;
     color: rgb(100, 37, 100);
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 ul li {
@@ -306,7 +375,7 @@ ul li {
     border-top: 3px dotted rgb(113, 83, 113);
     font-size: 1.1rem;
     color: rgb(100, 37, 100);
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 .instructionblock {
@@ -321,11 +390,9 @@ ul li {
 }
 
 .fourthh2 {
-    display: block;
     text-align: center;
     text-decoration-line: underline;
-    margin-top: 5%;
-    width: 60%;
+    margin-top: 0;
     color: rgb(66, 26, 66);
 }
 
@@ -336,13 +403,13 @@ ul li {
 .left {
     width: 60%;
     padding-right: 5%;
-    margin-top: 5%;
+    margin-top: 3rem;
     margin-bottom: 0;
 }
 
 .right {
     width: 20%;
-    margin-top: 5%;
+    margin-top: 3rem;
     margin-bottom: 0%;
 }
 
@@ -388,14 +455,21 @@ ul li {
     flex-direction: column;
     height: fit-content;
     border-top: 3px dotted rgb(113, 83, 113);
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 .leftblockfifth {
     width: 60%;
     padding-right: 5%;
-    margin-top: 3%;
     margin-bottom: 0;
+}
+
+.fifthh2 {
+    text-align: center;
+    text-decoration-line: underline;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(66, 26, 66);
 }
 
 @media (max-width: 830px) {
@@ -425,7 +499,7 @@ ul li {
 .leftblock h2 {
     text-align: center;
     text-decoration-line: underline;
-    margin-top: 5%;
+    margin-top: 3rem;
     color: rgb(66, 26, 66);
 }
 
@@ -436,7 +510,7 @@ ul li {
 .rightblock h2 {
     text-align: center;
     text-decoration-line: underline;
-    margin-top: 10%;
+    margin-top: 3rem;
     color: rgb(66, 26, 66);
 }
 
